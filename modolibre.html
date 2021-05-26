@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/be7eacc6a1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <title>SolfeO</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra">
+            <div class="barra-busqueda">
+                <div class="menus">
+                    <a href="index.html">
+                        <p>SolfeO</p>
+                    </a>
+                    <button id="menuHam"><i class="fas fa-bars"></i></button>
+                </div>
+                <div id="nav" class="nav">
+                    <a href="aprendeMas.html">
+                        <p>Aprende un poco mas</p>
+                    </a>
+                    <a href="modolibre.html">
+                        <p>Modo Libre</p>
+                    </a>
+                    <a href="practica.html">
+                        <p>Practica</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-modos">
+            <h1>Modo libre</h1>
+            <div class="partitura">
+                <img src="img/pentagrama.png" alt="pentagrama">
+                <div id="uno" class="notas uno">
+                    <img class="do pos" src="img/do1.png" alt="do">
+                    <img class="re pos" src="img/nota.png" alt="re">
+                    <img class="mi pos" src="img/nota.png" alt="mi">
+                    <img class="fa pos" src="img/nota.png" alt="fa">
+                    <img class="sol pos" src="img/nota.png" alt="sol">
+                    <img class="la pos" src="img/nota.png" alt="la">
+                    <img class="si pos" src="img/nota2.png" alt="si">
+                    <img class="do2 pos" src="img/nota2.png" alt="do">
+                </div>
+                <div id="dos" class="notas dos">
+                    <img class="do pos" src="img/do1.png" alt="do">
+                    <img class="re pos" src="img/nota.png" alt="re">
+                    <img class="mi pos" src="img/nota.png" alt="mi">
+                    <img class="fa pos" src="img/nota.png" alt="fa">
+                    <img class="sol pos" src="img/nota.png" alt="sol">
+                    <img class="la pos" src="img/nota.png" alt="la">
+                    <img class="si pos" src="img/nota2.png" alt="si">
+                    <img class="do2 pos" src="img/nota2.png" alt="do">
+                </div>
+                <div id="tres" class="notas tres">
+                    <img class="do pos" src="img/do1.png" alt="do">
+                    <img class="re pos" src="img/nota.png" alt="re">
+                    <img class="mi pos" src="img/nota.png" alt="mi">
+                    <img class="fa pos" src="img/nota.png" alt="fa">
+                    <img class="sol pos" src="img/nota.png" alt="sol">
+                    <img class="la pos" src="img/nota.png" alt="la">
+                    <img class="si pos" src="img/nota2.png" alt="si">
+                    <img class="do2 pos" src="img/nota2.png" alt="do">
+                </div>
+                <div id="cuatro" class="notas cuatro">
+                    <img class="do pos" src="img/do1.png" alt="do">
+                    <img class="re pos" src="img/nota.png" alt="re">
+                    <img class="mi pos" src="img/nota.png" alt="mi">
+                    <img class="fa pos" src="img/nota.png" alt="fa">
+                    <img class="sol pos" src="img/nota.png" alt="sol">
+                    <img class="la pos" src="img/nota.png" alt="la">
+                    <img class="si pos" src="img/nota2.png" alt="si">
+                    <img class="do2 pos" src="img/nota2.png" alt="do">
+                </div>
+            </div>
+
+            <div>
+                <form class="respuesta">
+                    <label for="fname">Notas:</label>
+                    <div class="cuadro-botones">
+                        <input type="text" id="notasAT">
+                        <div id='popup' class="popup">
+                            <img src="img/help.png" alt="Ayuda">
+                            <span class="popuptext" id="myPopup">En el cuadro de texto ingrese las notas
+                                que desee mostrar, siguiendo la estructura del
+                                sigueinte ejemplo: "Do Re Mi Fa" y presione el boton "Tocar"</span>
+                        </div>
+                    </div>
+                    <input type="button" id="tocar" value="Tocar" class="boton">
+                </form>
+            </div>
+
+
+        </div>
+    </main>
+    </main>
+    <footer>
+        <div class="barra">
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>

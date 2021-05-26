@@ -1,0 +1,891 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+audio {
+    display: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Index*/
+
+.divisor {
+    display: grid;
+    grid-auto-rows: repeat(3, 1fr);
+}
+
+.divisor .barra {
+    height: 4.5rem;
+}
+
+.barra {
+    background-color: black;
+    padding: 1.2rem;
+}
+
+.contenedor-principal {
+    margin-top: 0;
+    padding: 11rem;
+}
+
+.fondo {
+    background-image: url(../img/notation-music-animated-gif-6.gif);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.contenedor {
+    text-align: center;
+    margin: 9rem auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    border-style: solid;
+    margin: 1rem 6rem;
+}
+
+@media (max-width: 950px) {
+    .grid {
+        grid-template-rows: 20% 80%;
+    }
+    .menu {
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .menu a{
+        border-style: solid;
+        margin: none;
+    }
+    .contenedor-principal {
+        padding: 7.1rem;
+    }
+    .contenedor {
+        width: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+    .menu {
+        margin-top: 0rem;
+        flex-direction: column;
+    }
+}
+
+
+/*Barra de navegacion*/
+
+.barra-busqueda {
+    display: flex;
+    padding: 0 3rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-busqueda a {
+    color: white;
+}
+
+.barra-busqueda a:hover {
+    color: #696969;
+    transition: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    margin: 0 1rem;
+}
+
+.menus button {
+    display: none;
+    border-style: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+
+.menus button:hover {
+    color: #696969;
+}
+
+@media(max-width: 768px) {
+    .menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menus button {
+        display: block;
+    }
+    .barra-busqueda {
+        flex-direction: column;
+    }
+    .nav {
+        display: none;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+
+/*Sub paginas*/
+
+.aprende.contenedor {
+    margin: 0 auto;
+}
+
+.espacio p {
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.aprende {
+    width: 100%;
+    height: auto;
+    padding: 0 5rem 2rem 5rem;
+}
+
+.espacio {
+    margin-top: 3rem;
+}
+
+.espacio .contenido {
+    margin-bottom: 2rem;
+}
+
+.contenido img {
+    max-width: 100%;
+}
+
+.contenido p {
+    font-size: 1rem;
+}
+
+@media (max-width: 400px) {
+    .aprende {
+        width: auto;
+    }
+}
+
+@media(min-width: 768px) {
+    .aprende {
+        width: auto;
+    }
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+.respuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.respuesta input {
+    margin: 1rem auto;
+}
+
+.boton {
+    width: 5rem;
+    color: white;
+    background-color: #696969;
+    border: none;
+}
+
+
+/*Notas*/
+
+.contenedor-modos {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 7rem auto;
+}
+
+.partitura {
+    position: relative;
+}
+
+.partitura img {
+    max-width: 100%;
+}
+
+.notas img {
+    max-height: 4.5rem;
+}
+
+@media(max-width: 400px) {
+    .contenedor-modos {
+        padding: 7.9rem 0;
+        display: grid;
+        grid-auto-rows: min-content max-content auto;
+        align-items: center;
+    }
+}
+
+
+/*Primera nota*/
+
+.uno .pos {
+    left: 15rem;
+    position: absolute;
+}
+
+.uno .do {
+    display: none;
+    top: 4rem;
+}
+
+.uno .re {
+    display: none;
+    top: 3.4rem;
+}
+
+.uno .mi {
+    display: none;
+    top: 3rem;
+}
+
+.uno .fa {
+    display: none;
+    top: 2.4rem;
+}
+
+.uno .sol {
+    display: none;
+    top: 1.8rem;
+}
+
+.uno .la {
+    display: none;
+    top: 1.2rem;
+}
+
+.uno .si {
+    display: none;
+    top: 3.2rem;
+}
+
+.uno .do2 {
+    display: none;
+    top: 2.7rem;
+}
+
+@media (min-width: 700px) {
+    .uno .pos {
+        left: 15rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .uno .pos {
+        left: 30rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .uno .pos {
+        left: 37rem;
+    }
+}
+
+
+/*Segunda nota*/
+
+.dos .pos {
+    left: 18rem;
+    position: absolute;
+}
+
+.dos .do {
+    display: none;
+    top: 4rem;
+}
+
+.dos .re {
+    display: none;
+    top: 3.4rem;
+}
+
+.dos .mi {
+    display: none;
+    top: 3rem;
+}
+
+.dos .fa {
+    display: none;
+    top: 2.4rem;
+}
+
+.dos .sol {
+    display: none;
+    top: 1.8rem;
+}
+
+.dos .la {
+    display: none;
+    top: 1.2rem;
+}
+
+.dos .si {
+    display: none;
+    top: 3.2rem;
+}
+
+.dos .do2 {
+    display: none;
+    top: 2.7rem;
+}
+
+@media (min-width: 700px) {
+    .dos .pos {
+        left: 18rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .dos .pos {
+        left: 33rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .dos .pos {
+        left: 40rem;
+    }
+}
+
+
+/*Tercera Nota*/
+
+.tres .pos {
+    left: 21rem;
+    position: absolute;
+}
+
+.tres .do {
+    display: none;
+    top: 4rem;
+}
+
+.tres .re {
+    display: none;
+    top: 3.4rem;
+}
+
+.tres .mi {
+    display: none;
+    top: 3rem;
+}
+
+.tres .fa {
+    display: none;
+    top: 2.4rem;
+}
+
+.tres .sol {
+    display: none;
+    top: 1.8rem;
+}
+
+.tres .la {
+    display: none;
+    top: 1.2rem;
+}
+
+.tres .si {
+    display: none;
+    top: 3.2rem;
+}
+
+.tres .do2 {
+    display: none;
+    top: 2.7rem;
+}
+
+@media (min-width: 700px) {
+    .tres .pos {
+        left: 21rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .tres .pos {
+        left: 36rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .tres .pos {
+        left: 43rem;
+    }
+}
+
+
+/*Cuarta nota*/
+
+.cuatro .pos {
+    left: 24rem;
+    position: absolute;
+}
+
+.cuatro .do {
+    display: none;
+    top: 4rem;
+}
+
+.cuatro .re {
+    display: none;
+    top: 3.4rem;
+}
+
+.cuatro .mi {
+    display: none;
+    top: 3.4rem;
+}
+
+.cuatro .fa {
+    display: none;
+    top: 2.4rem;
+}
+
+.cuatro .sol {
+    display: none;
+    top: 1.8rem;
+}
+
+.cuatro .la {
+    display: none;
+    top: 1.2rem;
+}
+
+.cuatro .si {
+    display: none;
+    top: 3.2rem;
+}
+
+.cuatro .do2 {
+    display: none;
+    top: 2.7rem;
+}
+
+@media (min-width: 700px) {
+    .cuatro .pos {
+        left: 24rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .cuatro .pos {
+        left: 46rem;
+    }
+}
+
+
+/*Movil*/
+
+@media (max-width: 400px) {
+    /*Primera nota*/
+    .uno .pos {
+        left: 4rem;
+        position: absolute;
+    }
+    .uno .do {
+        display: none;
+        top: 2rem;
+    }
+    .uno .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .uno .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .uno .fa {
+        display: none;
+        top: .8rem;
+    }
+    .uno .sol {
+        display: none;
+        top: 0.4rem;
+    }
+    .uno .la {
+        display: none;
+        top: .1rem;
+    }
+    .uno .si {
+        display: none;
+        top: 2rem;
+    }
+    .uno .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+    /*Segunda nota*/
+    .dos .pos {
+        left: 8rem;
+        position: absolute;
+    }
+    .dos .do {
+        display: none;
+        top: 2rem;
+    }
+    .dos .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .dos .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .dos .fa {
+        display: none;
+        top: .8rem;
+    }
+    .dos .sol {
+        display: none;
+        top: 0.4rem;
+    }
+    .dos .la {
+        display: none;
+        top: .1rem;
+    }
+    .dos .si {
+        display: none;
+        top: 2rem;
+    }
+    .dos .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+    /*Tercera Nota*/
+    .tres .pos {
+        left: 12rem;
+        position: absolute;
+    }
+    .tres .do {
+        display: none;
+        top: 2rem;
+    }
+    .tres .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .tres .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .tres .fa {
+        display: none;
+        top: .8rem;
+    }
+    .tres .sol {
+        display: none;
+        top: .4rem;
+    }
+    .tres .la {
+        display: none;
+        top: .1rem;
+    }
+    .tres .si {
+        display: none;
+        top: 2rem;
+    }
+    .tres .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+    /*Cuarta nota*/
+    .cuatro .pos {
+        left: 16rem;
+        position: absolute;
+    }
+    .cuatro .do {
+        display: none;
+        top: 2rem;
+    }
+    .cuatro .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .cuatro .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .cuatro .fa {
+        display: none;
+        top: .8rem;
+    }
+    .cuatro .sol {
+        display: none;
+        top: .4rem;
+    }
+    .cuatro .la {
+        display: none;
+        top: .1rem;
+    }
+    .cuatro .si {
+        display: none;
+        top: 2rem;
+    }
+    .cuatro .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    /*Primera nota*/
+    .uno .pos {
+        left: 4rem;
+        position: absolute;
+    }
+    .uno .do {
+        display: none;
+        top: 2rem;
+    }
+    .uno .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .uno .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .uno .fa {
+        display: none;
+        top: .8rem;
+    }
+    .uno .sol {
+        display: none;
+        top: 0.4rem;
+    }
+    .uno .la {
+        display: none;
+        top: .1rem;
+    }
+    .uno .si {
+        display: none;
+        top: 2rem;
+    }
+    .uno .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+    /*Segunda nota*/
+    .dos .pos {
+        left: 8rem;
+        position: absolute;
+    }
+    .dos .do {
+        display: none;
+        top: 2rem;
+    }
+    .dos .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .dos .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .dos .fa {
+        display: none;
+        top: .8rem;
+    }
+    .dos .sol {
+        display: none;
+        top: 0.4rem;
+    }
+    .dos .la {
+        display: none;
+        top: .1rem;
+    }
+    .dos .si {
+        display: none;
+        top: 2rem;
+    }
+    .dos .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+    /*Tercera Nota*/
+    .tres .pos {
+        left: 12rem;
+        position: absolute;
+    }
+    .tres .do {
+        display: none;
+        top: 2rem;
+    }
+    .tres .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .tres .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .tres .fa {
+        display: none;
+        top: .8rem;
+    }
+    .tres .sol {
+        display: none;
+        top: .4rem;
+    }
+    .tres .la {
+        display: none;
+        top: .1rem;
+    }
+    .tres .si {
+        display: none;
+        top: 2rem;
+    }
+    .tres .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+    /*Cuarta nota*/
+    .cuatro .pos {
+        left: 16rem;
+        position: absolute;
+    }
+    .cuatro .do {
+        display: none;
+        top: 2rem;
+    }
+    .cuatro .re {
+        display: none;
+        top: 1.7rem;
+    }
+    .cuatro .mi {
+        display: none;
+        top: 1.2rem;
+    }
+    .cuatro .fa {
+        display: none;
+        top: .8rem;
+    }
+    .cuatro .sol {
+        display: none;
+        top: .4rem;
+    }
+    .cuatro .la {
+        display: none;
+        top: .1rem;
+    }
+    .cuatro .si {
+        display: none;
+        top: 2rem;
+    }
+    .cuatro .do2 {
+        display: none;
+        top: 1.7rem;
+    }
+}
+
+/*Popups*/
+.cuadro-botones{
+    display: flex;
+    align-items: center;
+}
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
