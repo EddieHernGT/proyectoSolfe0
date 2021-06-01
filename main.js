@@ -114,6 +114,7 @@
 
         //***** Genera cadenas notas *****
         function genNotas() {
+            ocultarNotas()
             notas = [];
             for (var i = 0; i < 4; i++) {
                 notas.push(genNota()); //manda llamar la generacion de notas
